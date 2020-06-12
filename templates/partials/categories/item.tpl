@@ -26,17 +26,20 @@
 			</a>
 			<!-- ENDIF ../teaser.timestampISO -->
 		</span>
+		<!-- IF !../link -->
+		<div class="col-md-2 hidden-sm hidden-xs stats">
+			<img src="/plugins/nodebb-theme-persona-netdata/images/topics.svg"/>
+			<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span>
+			<small>[[global:topics]]</small>
+		</div>
+		<div class="col-md-2 hidden-sm hidden-xs stats">
+			<img src="/plugins/nodebb-theme-persona-netdata/images/posts.svg"/>
+			<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span>
+			<small>[[global:posts]]</small>
+		</div>
+		<!-- ENDIF !../link -->
 	</div>
-
 	<!-- IF !../link -->
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
-		<small>[[global:topics]]</small>
-	</div>
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
-		<small>[[global:posts]]</small>
-	</div>
 	<!-- IF !config.hideCategoryLastPost -->
 	<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
 		<!-- IMPORT partials/categories/lastpost.tpl -->

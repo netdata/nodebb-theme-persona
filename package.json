@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-persona-netdata",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "upstream-version": "10.1.39",
   "nbbpm": {
     "compatibility": "^1.13.0"
