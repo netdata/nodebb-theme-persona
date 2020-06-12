@@ -65,27 +65,27 @@
 					<!-- ENDIF topics.teaser.timestamp -->
 				</small>
 			</h2>
+			<div class="col-md-2 hidden-sm hidden-xs stats stats-postcount">
+				<img src="/plugins/nodebb-theme-persona-netdata/images/posts.svg"/>
+				<span class="human-readable-number" title="{topics.postcount}">{topics.postcount}</span>
+				<small>[[global:posts]]</small>
+			</div>
+			<div class="col-md-2 hidden-sm hidden-xs stats stats-votes">
+				<!-- IF !reputation:disabled -->
+				<img src="/plugins/nodebb-theme-persona-netdata/images/votes.svg"/>
+				<span class="human-readable-number" title="{topics.votes}">{topics.votes}</span>
+				<small>[[global:votes]]</small>
+				<!-- END -->
+			</div>
+			<div class="col-md-2 hidden-sm hidden-xs stats stats-viewcount">
+				<img src="/plugins/nodebb-theme-persona-netdata/images/visits.svg"/>
+				<span class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</span>
+				<small>[[global:views]]</small>
+			</div>
 		</div>
 
 		<div class="mobile-stat col-xs-2 visible-xs text-right">
 			<span class="human-readable-number">{topics.postcount}</span> <a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}"><i class="fa fa-arrow-circle-right"></i></a>
-		</div>
-
-		<div class="col-md-1 hidden-sm hidden-xs stats stats-votes">
-			<!-- IF !reputation:disabled -->
-			<span class="human-readable-number" title="{topics.votes}">{topics.votes}</span><br />
-			<small>[[global:votes]]</small>
-			<!-- END -->
-		</div>
-
-		<div class="col-md-1 hidden-sm hidden-xs stats stats-postcount">
-			<span class="human-readable-number" title="{topics.postcount}">{topics.postcount}</span><br />
-			<small>[[global:posts]]</small>
-		</div>
-
-		<div class="col-md-1 hidden-sm hidden-xs stats stats-viewcount">
-			<span class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</span><br />
-			<small>[[global:views]]</small>
 		</div>
 
 		<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
