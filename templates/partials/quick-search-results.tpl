@@ -1,5 +1,6 @@
+<ul id="quick-search-results" class="quick-search-results">
 {{{each posts}}}
-<li>
+<li data-tid="{posts.topic.tid}" data-pid="{posts.pid}">
 	<a href="{config.relative_path}/post/{posts.pid}">
 		{buildAvatar(posts.user, "sm", true)}
 		<span class="quick-search-title">{posts.topic.title}</span>
@@ -17,10 +18,14 @@
 <li role="separator" class="divider"></li>
 <!-- ENDIF -->
 {{{end}}}
+</ul>
 <!-- IF multiplePages -->
-<li class="text-center">
+<div class="text-center">
 	<a href="{url}">
 		[[search:see-more-results, {matchCount}]]
 	</a>
-</li>
+</div>
 <!-- ENDIF multiplePages -->
+{{{if !posts.length}}}
+<div class="text-center no-results">[[search:no-matches]]</li>
+{{{end}}}
