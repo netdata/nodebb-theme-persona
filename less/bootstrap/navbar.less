@@ -32,7 +32,6 @@
   &:extend(.clearfix all);
 
   @media (min-width: @grid-float-breakpoint) {
-    float: left;
   }
 }
 
@@ -423,6 +422,7 @@
       &,
       &:hover,
       &:focus {
+        font-weight: bold;
         color: @navbar-default-link-active-color;
         background-color: @navbar-default-link-active-bg;
       }
