@@ -12,4 +12,32 @@
             color: @gray-light;
         }
     }
+
+    #flags-daily-wrapper + .panel-footer {
+        .pointer;
+    }
+
+    [component="flag/notes"] {
+        .media {
+            padding: 1rem;
+        }
+
+        .media-right {
+            visibility: hidden;
+
+            i {
+                padding: 1rem;
+            }
+        }
+
+        &:hover {
+            .media-right {
+                visibility: visible;
+            }
+        }
+
+        .editing {
+            background-color: @state-info-bg;
+        }
+    }
 }
