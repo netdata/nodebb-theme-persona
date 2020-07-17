@@ -22,6 +22,14 @@
 				<div component="navbar/title" class="visible-xs hidden">
 					<span></span>
 				</div>
+
+				<div id="secondary-menu">
+					<ul>
+						<li><a href="https://learn.netdata.cloud/#installation">Get the Agent</a></li>
+						<li><a href="https://app.netdata.cloud">Sign in to Cloud</a></li>
+					</ul>
+				</div>
+
 			</div>
 
 			<div id="nav-dropdown" class="hidden-xs">
