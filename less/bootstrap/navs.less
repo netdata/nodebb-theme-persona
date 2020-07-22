@@ -16,13 +16,16 @@
     position: relative;
     display: block;
 
+    &:first-of-type {
+      > a {
+        padding-left: 0px;
+      }
+    }
+
     > a {
       position: relative;
       display: block;
       padding: @nav-link-padding;
-      &:first-of-type {
-        padding-left: 0px;
-      }
       &:hover,
       &:focus {
         text-decoration: none;
